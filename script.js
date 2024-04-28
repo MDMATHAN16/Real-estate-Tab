@@ -49,7 +49,7 @@ async function verify(id)
   document.getElementById('ownppy').innerHTML= "No of Properties Owned : "+res2['Property_count'];
   document.getElementById('pname').innerHTML = "Property Name : "+res['Property_name'];
   document.getElementById('ploc').innerHTML = "Location : "+res['location'];
-  document.getElementById('pprice').innerHTML = "Price : $"+res['price'];
+  document.getElementById('pprice').innerHTML = "Price : Rs."+res['price'];
   document.getElementById('pdes').innerHTML = "Description : "+res['description'];
 }
   async function getPropertyDetails(){
