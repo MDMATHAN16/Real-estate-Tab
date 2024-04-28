@@ -25,7 +25,7 @@ h3.textContent = "Price ";
 
 // Create a span element
 var span = document.createElement("span");
-span.textContent = "Rs."+pri;
+span.textContent = "$ "+pri;
 
 // Append the span to the h3
 h3.appendChild(span);
