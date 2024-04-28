@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+  --red: #ff5a3c;
+  --light-red: #f9edeb;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+section {
+  padding: 2rem 5%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  color: var(--red);
+  background: var(--light-red);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.heading span {
+  color: var(--red);
+  background: var(--light-red);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1.5rem;
+}
+
+header {
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem 9%;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header .logo span {
+  color: var(--red);
+}
+
+header .navbar a {
+  color: #333;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+
+header .navbar a:hover {
+  color: var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 5rem;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--red);
+  background: var(--light-red);
+  text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover {
+  background-color: var(--red);
+  color: #fff;
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home form {
+  margin-top: 7rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  width: 70rem;
+  padding: 2rem;
+}
+
+.home form h3 {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+}
+
+.home form .buttons-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home form .buttons-container .btn {
+  flex: 1;
+}
+
+.home form .inputBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home form .inputBox input,
+.home form .inputBox select {
+  flex: 1 1 25rem;
+  border: 0.1rem solid #333;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.home form .btn {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.footer .footer-container {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.footer .footer-container .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer .footer-container .box-container .box {
+  flex: 1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+.footer .footer-container .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.footer .footer-container .box-container .box a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.footer .footer-container .credit {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-container .credit span {
+  color: var(--red);
+}
+
+.footer .footer-container {
+  margin-bottom: 8rem;
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #f7f7f7;
+    border-top: 0.1rem solid #333;
+    border-bottom: 0.1rem solid #333;
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid #333;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+}
+section > section{
+  margin-left: 10px;
+  border: none;
+  margin-top: -1rem;
+}
+section{
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 10px;
+  height: 380px;
+}
+section > img{
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+section > h1{
+  margin-left: 10px;
+  font-family: "Acme",Georgia, 'Times New Roman', Times, serif;
+}
+section > h5{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  font-size: 22px;
+}
+section > h3 > span{
+  color: var(--red);
+}
+section > section > button:nth-child(1){
+  background-color: green;
+  font-size: 21px;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 35%;
+  cursor: pointer;
+}
+section > section > button:nth-child(2){
+  background-color: tomato;
+  font-size: 21px;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 35%;
+  margin-right: 50px;
+  float: right;
+  cursor: pointer;
+}
+
+#pachacolorbutton{
+  padding: 1.5rem 3rem;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 2rem;
+  margin: 2rem;
+  background-color: #24e224;
+  float: left;
+}
+
+#pulucolorbutton{
+  padding: 1.5rem 3rem;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 2rem;
+  margin: 2rem;
+  background-color: #1b78c4;
+  float: right;
+}
+
+
+
+#pachacolorbutton:hover{
+  opacity:0.7;
+
+}
+#pachacolorbutton:active{
+  opacity: 0.9;
+}
+#pulucolorbutton:hover{
+  opacity:0.7;
+
+}
+
+
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact .row form .inputBox input {
+    width: 100%;
+  }
+}
+
+.intro{
+    margin-top: -15vh;
+    height: 150vh;
+    background-image: url(pexels-binyaminmellish-106399.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.intro > h1{
+    font-size: 45px;
+    padding: 30vh;
+    padding-left: 53vh;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    color: #d41454;
+    box-shadow: #333;
+    font-style: normal;
+}
+.addprop > div > h2{
+    font-family: "Acme", sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 20px;
+}
+.addprop{
+    height: 106vh;
+}
+.addprop> div > button{
+  display: none;
+  margin-left: 40px;
+  margin-top: 50px;
+  background-color: var(--red);
+  font-size: 26px;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+.addprop >div> button:hover{
+  color:  var(--red);
+  background-color:#aaa;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position:fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  max-height: 650px;
+  padding: 10px;
+  background-color: #aaa;
+  font-size:medium;
+}
+
+/* Full-width input fields */
+.form-container input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input:focus{
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.modalimg
+{
+width: 80%;
+margin-left: 50px;
+margin-top: 10px;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.content,#own{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+#own{
+  height: 70vh;
+}
+#own > h2,.content > h2{
+  margin-left: 260px;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+.modalimg
+{
+width: 90%;
+padding: 5px;
+margin-top: 10px;
+}
+#v-property{
+  display: none;
+  margin-left: 25%;
+  margin-top: 10%;
+  height: 700px;
+  width: 100%;
+}
+#v-property > h2{
+  font-size: 30px;
+  margin-left: 260px;
+  color: red;
+  font-weight: bold;
+}
+.des
+{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.des > div {
+  /* border: 1px solid; */
+  padding-left: 0px;
+}
