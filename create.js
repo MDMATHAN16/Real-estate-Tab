@@ -2,10 +2,10 @@ function create(pri,name,loc,info,des)
 {
  // Create a section element
 var section = document.createElement("section");
-
+var infg = "img"+(parseInt(info)+1)+".jpg";
 // Create an image element
 var image = document.createElement("img");
-image.setAttribute("src", "image.jpeg");
+image.setAttribute("src", infg);
 image.setAttribute("alt", "");
 
 // Create an h1 element
