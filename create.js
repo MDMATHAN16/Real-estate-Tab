@@ -10,11 +10,11 @@ image.setAttribute("alt", "");
 
 // Create an h1 element
 var h1 = document.createElement("h1");
-h1.textContent = name;
+h1.textContent = name+"  in "+loc;
 
 // Create an h5 element
 var h5 = document.createElement("h5");
-h5.textContent = loc+" - "+des;
+h5.textContent = des;
 
 // Create another section element
 var innerSection = document.createElement("section");
@@ -79,11 +79,11 @@ image.setAttribute("alt", "");
 
 // Create an h1 element
 var h1 = document.createElement("h1");
-h1.textContent = name;
+h1.textContent = name+"  in "+loc;
 
 // Create an h5 element
 var h5 = document.createElement("h5");
-h5.textContent = loc+" - "+des;
+h5.textContent = des;
 
 // Create another section element
 var innerSection = document.createElement("section");
